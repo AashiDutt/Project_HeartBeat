@@ -123,7 +123,7 @@ jupyter notebook Final-Project-Code.ipynb
 
 You can download or view the sample generated PDF report [here](https://github.com/AashiDutt/Project_HeartBeat/blob/master/Images/sample_report.pdf).
 
-# To DO
+# To DO's
 
 - [x] Build pipeline from Arduino to Flask for getting data.
 - [x] Add code to read data on button press.
