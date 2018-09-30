@@ -98,9 +98,11 @@ jupyter notebook Final-Project-Code.ipynb
 
 2. Then take the PulseSensor and strap it around your finger and click on "Start Reading Data".
 
-3. Once this is done, click on "Get Data Summary". This will open a camera to take your picture for the pdf report. Click on "Space Bar to Capture Image" and then "Esc to Exit".
+3. Once this is done, click on "Get Data Summary". This will open a camera to take your picture for the pdf report. 
 
-4. Once this is done, wait till you see a pdf file in your current directory. Once you have the pdf, the process is complete.
+4. Click on "Space Bar to Capture Image" and then "Esc to Exit".
+
+5. Once this is done, wait till you see a pdf file in your current directory. Once you have the pdf, the process is complete.
 ```
 
 # Results
