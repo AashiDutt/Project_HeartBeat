@@ -60,6 +60,49 @@ pip3 install -U pySerial
 pip3 install reportlab
 ```
 
+**9. Arduino Board + PulseSensor [or any other Heart Rate Measurement Sensor]**
+
+**10. Jupyter Notebook**
+```
+pip3 install jupyter notebook
+```
+
+# Usage
+
+To make this project work, follow these instructions:
+
+**1.** Clone this repository using:
+```
+git clone https://github.com/AashiDutt/Project_HeartBeat.git
+```
+
+**2.** Connect your Arduino Board with Pulse Sensor as follows:
+```
+Red Wire -> 5V
+Black Wire -> GND
+Purple Wire -> A0
+```
+
+**3.** Once you have the connections, upload the code to Arduino. For this, open the code in the folder "Arduino-Sensor-Code" in Arduino IDE and click on Upload. Once the code is uploaded successfully, test out the data from the sensor using Arduino's Serial Plotter under Tools.
+
+**4.** Once you have the data, go to your current directory and open Jupyter Notebok as follows:
+```
+jupyter notebook Final-Project-Code.ipynb
+```
+
+**5.** Run each code block one by one. After running the last block you should get a localhost address. Click on that to open. This should take you to the Flask Dashboard as shown in results below.
+
+**6.** Now follow these steps:
+```
+1. Enter your name, gender and age in the text box and click Submit. Ex. john_wayne,M,30
+
+2. Then take the PulseSensor and strap it around your finger and click on "Start Reading Data".
+
+3. Once this is done, click on "Get Data Summary". This will open a camera to take your picture for the pdf report. Click on "Space Bar to Capture Image" and then "Esc to Exit".
+
+4. Once this is done, wait till you see a pdf file in your current directory. Once you have the pdf, the process is complete.
+```
+
 # Results
 
 **1. Flask Dashboard:**
