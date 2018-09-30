@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Training Project Demo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="static/css/style.css">
+    <!-- <link rel="stylesheet" href="static/css/bootstrap-grid.min.css"> -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+
+    <!-- ******************* Refresh Page ever N Seconds ******************* -->
+    <script type="text/JavaScript">
+        function timeRefresh(timeoutPeriod) {
+            setTimeout("location.reload(true);", timeoutPeriod);
+            // $SCRIPT_ROOT = {{ request.script_root|tojson|safe }};
+            // $.getJSON($SCRIPT_ROOT+"/",
+            //     function(data) {
+            //         $("#bpm").text(data.bpm +" BPM")
+            //     });
+        }
+    </script>
+    <!-- ******************************************************************  -->
+
+    <!-- <script type="text/javascript">
+    function update_values() {
+          $SCRIPT_ROOT = {{ request.script_root|tojson|safe }};
+          $.getJSON($SCRIPT_ROOT+"/",
+              function(data) {
+                  $("#bpm").text(data.bpm +" BPM")
+              });
+      }
+    </script> -->
+
+
+  </head>
+
+  <header>
+    <h1 align="center" style="margin-top: -150px">Training Project Demo</h1>
+    <h4 align="center" style="margin-left: 50px; margin-right: 900px; margin-top: 50px">
+      <form class="form-inline" method="POST">
+        <div class="user_name" align="left">
+        <input type="user_name" class="form-control" id="user_name" name="user_name" aria-describedby="emailHelp" placeholder="Name, Gender [M/F]"></input>
+      </div>
+      <button type="user_name_submit" style="margin-left: 20px" value="user_name_submit" id="user_name_submit" name="button" class="btn btn-primary">Submit</button>
+      </form>
+    </h4>
+
+    <!-- Start Button Script  -->
+    <script>
+       var button = document.getElementById("user_name_submit");
+       button.onclick = function(){
+         { alert("Name Submitted Successfully !!")}
+       }
+    </script>
+  </header>
+
+  <!-- <body onLoad="JavaScript:timeRefresh(5000);"> -->
+  <!-- <body> -->
+
+    <!-- ********************* Start Reading BPM Data ******************** -->
+    <div>
+      <div align="left" style="float:left; width: 50px; margin-left: 50px; margin-bottom: 20px; margin-top: 30px;" class="start">
+        <form action="/" method="post">
+          <button id="start" type="start" value="start" name="button" class="btn btn-success">Start Reading Data</button>
+        </form>
+      </div>
+
+    <!-- Start Button Script  -->
+    <script>
+       var button = document.getElementById("start");
+       button.onclick = function(){
+         { alert("Reading Data Now. . .")}
+       }
+    </script>
+     <!-- Start Button Script -->
+    <!-- ******************** End Start Reading BPM Data ********************* -->
+
+    <!-- ********************* Stop Reading BPM Data ********************* -->
+    <div>
+      <div align="right" style="float:right; width: 130px; margin-right: 50px; margin-bottom: 20px; margin-top: 30px;" class="stop">
+        <form action="/" method="post">
+          <button id="stop" type="stop" value="stop" name="button" class="btn btn-info">Get Data Summary</button>
+        </form>
+      </div>
+
+    <!-- Start Button Script  -->
+    <script>
+       var button = document.getElementById("stop");
+       button.onclick = function(){
+         { alert("Preparing Data Analytics. . .")}
+       }
+    </script>
+     <!-- Stop Button Script -->
+    <!-- ********************* End Stop Reading BPM Data ******************* -->
+
+    <!-- ************************ HearBeat Animation **********************  -->
+    <div>
+      <div align="center" style="margin-top: 100px" class="center">
+          <div class="icon icon-heart"><span class="dot"></span><span class="line"></span></div>
+    </div>
+    <!-- ********************* End HeartBeat Animation ********************* -->
+
+    <!-- ************************* Beats Per Minute Display **************** -->
+    <form class="form-inline" align="center">
+      <div align="center" style="margin-top: 100px; margin-left: 250px" class="bpm">
+          <h3 align="center">Average Beats Per Minute</h3>
+          <p id="bpm" align="center">{{ beats_per_minute }}</p>
+    </div>
+      <div align="center" style="margin-top: 110px; margin-bottom: 10px; margin-left:200px" class="activity">
+        <h3 align="center">Predicted Activity</h3>
+        <p id="activity" align="center">Sitting/Idle</p>
+      </div>
+    </form>
+
+    <!-- <script type="text/javascript">
+    function update_values() {
+          $SCRIPT_ROOT = {{ request.script_root|tojson|safe }};
+          $.getJSON($SCRIPT_ROOT+"/",
+              function(data) {
+                  $("#bpm").text(data.bpm +" BPM")
+              });
+      }
+    </script> -->
+    <!-- *********************** End Beats Per Minute Display **************** -->
+
+    <!-- ************************* Beats Per Minute Display **************** -->
+    <!-- <div>
+      <div align="center" style="margin-top: 30px; margin-bottom: 10px" class="activity">
+          <h3 align="center">Predicted Activity</h3>
+          <p id="activity" align="center">Sitting/Idle</p>
+    </div> -->
+    <!-- *********************** End Beats Per Minute Display **************** -->
+
+
+    <!-- ******************** Add Footer to Website for Creator Name ********* -->
+    <footer align="center">
+      <p align="center" class="copyright text-muted">Copyright © Aashi Dutt</p>
+    </footer>
+    <!-- ********************************************************************  -->
+
+  </body>
+</html>

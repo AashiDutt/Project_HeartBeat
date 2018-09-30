@@ -1,0 +1,164 @@
+/* css heartbeat */
+.icon-heart {
+  height:2em;
+  width:2em;
+  display:inline-block;
+  position:relative;
+  /* TEST */
+  -webkit-animation: heart-beats 3s infinite;
+  animation: heart-beats 3s infinite;
+  /* END */
+}
+.icon-heart:before,
+.icon-heart:after,
+.icon-heart span:before,
+.icon-heart span:after {
+  content:"";
+  display:block;
+}
+
+h1{
+  display: block;
+  font-size: 2em;
+  -webkit-margin-before: 0em;
+  -webkit-margin-after: 0em;
+  -webkit-margin-start: 0em;
+  -webkit-margin-end: 0em;
+  font-weight: bold;
+}
+
+/* left hump */
+.icon-heart:before {
+  position:absolute;
+  left:.1em;
+  top:0px;
+  transform: rotate(-45deg);
+  background:#d90000;
+  height:2em;
+  width:1.2em;
+  border-top-left-radius: 3em;
+  border-top-right-radius: 3em;
+}
+/* right hump */
+.icon-heart:after {
+  position:absolute;
+  right:.12em;
+  top:0px;
+  transform: rotate(45deg);
+  background:#d90000;
+  height:2em;
+  width:1.2em;
+  border-top-left-radius: 3em;
+  border-top-right-radius: 3em;
+}
+/* the animated dot */
+.icon-heart span.dot:after {
+  height:.2em;
+  width:.2em;
+  left:-.4em;
+  top:50%;
+  background:#ffffff;
+  position:absolute;
+  z-index:999;
+  border-radius:100%;
+  -webkit-animation: heartbeat 2s linear 0s infinite; /* Chrome, Safari, Opera */
+  animation: heartbeat 2s linear 0s infinite;
+}
+/* straight part of line */
+.icon-heart span.line {
+  height:1.3px;
+  background:rgba(249,218,255,.5);
+  top:1.1em;
+  position:absolute;
+  left:-.2em;
+  display:block;
+  width:2.4em;
+  z-index:996;
+}
+/* first line peak */
+.icon-heart span.line:before {
+  height:.5em;
+  top:-.27em;
+  position:absolute;
+  left:.4em;
+  display:block;
+  width:.5em;
+  z-index:998;
+  transform: rotate(-45deg);
+  border-top:2px solid rgba(249,218,255,.5);
+  border-right:2px solid rgba(249,218,255,.5);
+  z-index:998;
+  background:#d90000;
+}
+/* second line peak */
+.icon-heart span.line:after {
+  height:.2em;
+  top:-.12em;
+  position:absolute;
+  left:1.2em;
+  display:block;
+  width:.2em;
+  z-index:997;
+  transform: rotate(-45deg);
+  border-top:2px solid rgba(249,218,255,.5);
+  border-right:2px solid rgba(249,218,255,.5);
+  z-index:998;
+  background:#d90000;
+}
+/* /css heartbeat */
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    width: 50%;
+}
+
+/* animation css */
+/* Chrome, Safari, Opera */
+@-webkit-keyframes heartbeat {
+  0%   {background:rgba(255,255,255,0); left:-.4em; top:50%;}
+  20%  {background:rgba(255,255,255,.5); left:.2em; top:50%;}
+  35%  {background:rgba(255,255,255,1); left:.4em; top:30%;}
+  45%  {background:rgba(255,255,255,.5); left:.7em; top:50%;}
+  55%  {background:rgba(255,255,255,.5); left:.9em; top:50%;}
+  65%  {background:rgba(255,255,255,1); left:1.1em; top:42%;}
+  75%  {background:rgba(255,255,255,.5); left:1.2em; top:50%;}
+  100% {background:rgba(255,255,255,0); left:2.4em; }
+}
+
+/* Standard syntax */
+@keyframes heartbeat {
+  0%   {background:rgba(255,255,255,0); left:-.4em; top:50%;}
+  20%  {background:rgba(255,255,255,.5); left:.2em; top:50%;}
+  35%  {background:rgba(255,255,255,1); left:.4em; top:30%;}
+  45%  {background:rgba(255,255,255,.5); left:.7em; top:50%;}
+  55%  {background:rgba(255,255,255,.5); left:.9em; top:50%;}
+  65%  {background:rgba(255,255,255,1); left:1.1em; top:42%;}
+  75%  {background:rgba(255,255,255,.5); left:1.2em; top:50%;}
+  100% {background:rgba(255,255,255,0); left:2.4em; }
+}
+/* /animation */
+
+/* ----------------------------- TEST -----------------------------  */
+@keyframes heart-beats {
+  0%   { transform: scale(1); background-color:white;}
+  7%  { transform: scale(1.2); }
+  12%  { transform: scale(1.1); }
+  20%  { transform: scale(1.3); }
+  60%  { transform: scale(1); }
+  100% { transform: scale(0.99); }
+}
+/* ---------------------------------------------------------------- */
+
+/* for this presentation, not required */
+body {
+  text-align:center;
+  padding:13% 0 20px 0;
+  background:#FFFFFF;
+}
+.icon-heart {
+  zoom:3;/* make the heart big */
+}
+/* /not required */
