@@ -70,7 +70,7 @@ pip3 install reportlab
 
 ![Output a1](Images/sample_heartRate.png?raw=true "Output a1")
 
-**3. Data Analysis:**
+**3. Data Analysis [Finding Peaks, Computing Moving Averages and Computing Average BPM]:**
 
 ![Output a1](Images/sample_user_cropped_image.png?raw=true "Output a1")
 
