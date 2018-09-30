@@ -122,3 +122,14 @@ jupyter notebook Final-Project-Code.ipynb
 **4. Final PDF Report:**
 
 You can download or view the sample generated PDF report [here](https://github.com/AashiDutt/Project_HeartBeat/blob/master/Images/sample_report.pdf).
+
+# To DO
+
+- [x] Build pipeline from Arduino to Flask for getting data.
+- [x] Add code to read data on button press.
+- [x] Add code to plot the data automatically at backend and store as Pandas DataFrame.
+- [x] Add code to analyze stored data using moving averages and using peaks to find estimated Average BPM.
+- [x] Add code to capture patient's image for medical report.
+- [x] Add code to generate PDF report using all the data and plots.
+- [ ] Add code to store each user's data in database (MongoDB) for future retrieval.
+- [ ] Add code to retrieve user's previous data and reports from database for doctor's reference.
