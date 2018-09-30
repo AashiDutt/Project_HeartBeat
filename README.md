@@ -54,3 +54,26 @@ pip3 install matplotlib
 ```
 pip3 install -U pySerial
 ```
+
+**8. ReportLab**
+```
+pip3 install reportlab
+```
+
+# Results
+
+**1. Flask Dashboard:**
+
+![Output a1](Images/flask-page.png?raw=true "Output a1")
+
+**2. Heart Rate Reading and it's Plot:**
+
+![Output a1](Images/sample_heartRate.png?raw=true "Output a1")
+
+**3. Data Analysis:**
+
+![Output a1](Images/sample_user_cropped_image.png?raw=true "Output a1")
+
+**4. Final PDF Report:**
+
+You can download or view the sample generated PDF report [here](https://github.com/AashiDutt/Project_HeartBeat/blob/master/Images/sample_report.pdf).
