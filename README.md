@@ -117,7 +117,7 @@ jupyter notebook Final-Project-Code.ipynb
 
 **3. Data Analysis [Finding Peaks, Computing Moving Averages and Computing Average BPM]:**
 
-![Output a1](Images/sample_user_cropped_image.png?raw=true "Output a1")
+![Output a1](Images/sample_avg_heartRate.png?raw=true "Output a1")
 
 **4. Final PDF Report:**
 
