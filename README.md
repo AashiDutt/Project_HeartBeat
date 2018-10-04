@@ -67,6 +67,11 @@ pip3 install reportlab
 pip3 install jupyter notebook
 ```
 
+**11. emoji**
+```
+pip3 install emoji
+```
+
 # Usage
 
 To make this project work, follow these instructions:
@@ -94,7 +99,7 @@ jupyter notebook Final-Project-Code.ipynb
 
 **6.** Now follow these steps:
 ```
-1. Enter your name, gender and age in the text box and click Submit. Ex. john_wayne,M,30
+1. Enter your name, gender, age and email id in the text box and click Submit. Ex. john_wayne,M,30,john.wayne@gmail.com
 
 2. Then take the PulseSensor and strap it around your finger and click on "Start Reading Data".
 
@@ -131,5 +136,6 @@ You can download or view the sample generated PDF report [here](https://github.c
 - [x] Add code to analyze stored data using moving averages and using peaks to find estimated Average BPM.
 - [x] Add code to capture patient's image for medical report.
 - [x] Add code to generate PDF report using all the data and plots.
+- [x] Add code to send generated PDF report to patient using patient's email.
 - [ ] Add code to store each user's data in database (MongoDB) for future retrieval.
 - [ ] Add code to retrieve user's previous data and reports from database for doctor's reference.
