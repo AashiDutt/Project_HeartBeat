@@ -72,6 +72,11 @@ pip3 install jupyter notebook
 pip3 install emoji
 ```
 
+**12. urllib3**
+```
+pip3 install urllib3
+```
+
 # Usage
 
 To make this project work, follow these instructions:
